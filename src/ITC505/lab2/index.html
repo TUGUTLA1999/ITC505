@@ -67,14 +67,15 @@
     <p>This section is dedicated to explaining the structural choices made while converting the resume into HTML format. The use of semantic HTML tags such as &lt;header&gt;, &lt;section&gt;, and &lt;h1&gt; through &lt;h3&gt; helps in structuring the content in a meaningful, organized manner that enhances both readability and accessibility. The &lt;article&gt; tag encompasses the entire resume content, indicating it as a standalone piece of content, while another &lt;article&gt; tag is used for this addendum to keep explanations distinct from the main content.</p>
 </article>
 
-<footer>
-    <p>Last updated: 
-        <span id="lastModified"></span>
-    </p>
-</footer>
-<script type="text/javascript">
-     document.getElementById('lastModified').textContent = document.lastModified;
-</script>
+ <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
 
 </body>
 </html>
