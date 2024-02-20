@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3: Serving Fonts</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/lumanosimo');    
+        body{
+
+            font-family: 'Lumanosimo', sans-serif;                                    
+        }
+    </style>
+</head>
+<body>
+    <h1>How a specific font can be delivered to a client (browser) making a request to your server ?</h1>
+    <p>When a client's browser requests a web page from your server, it also requests any additional resources required to render that page, including fonts. Here's how a font can be delivered to a client's browser using the self-hosting technique:</p>
+    <h3>1. Font Selection</h3>
+    <p>Choose the font you want to use on your website, ensuring that you have the appropriate licensing rights if necessary.</p>
+    <h3>2. Font Conversion:</h3>
+    <p> Convert the font files into web-friendly formats like WOFF (Web Open Font Format) or WOFF2 (Web Open Font Format 2). These formats are optimized for web usage and are supported by most modern browsers. You may also include other formats like TTF (TrueType Font) and EOT (Embedded OpenType) for compatibility with older browsers.</p>
+    <h3>3. Font Hosting:</h3>
+    <p>Upload the converted font files to a directory on your web server. This directory should be accessible to web clients and configured to serve files over HTTP.</p>
+    <h3>4. Define @font-face Rules: </h3>
+    <p>In your website's CSS (Cascading Style Sheets) file, define @font-face rules that specify the font family and the paths to the font files on your server. This informs the browser where to find and how to use the font.</p>
+    <h3>5. Apply the Font:</h3>
+    <p>Once you've defined the @font-face rule, you can apply the font to specific elements or globally across your website using the font-family property in your CSS.</p>
+    <h3>6. Testing and Optimization:</h3>
+    <p>Test your website across different browsers and devices to ensure that the font is loading correctly. Additionally, optimize the font files for web usage to improve loading times and overall performance. This might involve techniques like font subsetting to reduce file size or using preloading techniques to prioritize font loading.</p>
+    <hr>
+    <footer class = f>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>    
+</body>
+</html>
