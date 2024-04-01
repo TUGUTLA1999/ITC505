@@ -1,5 +1,4 @@
-/* @import url('https://fonts.cdnfonts.com/css/afacad'); */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.cdnfonts.com/css/roboto-condensed-3');
 
 body {
     min-height: 100vh;
@@ -16,7 +15,8 @@ body {
     box-sizing: border-box;
     font-family: 'Afacad', sans-serif;
     background-color: #eaeaea;
-    font-family: 'Roboto', sans-serif; /* Use Roboto for a modern look */
+    font-family: 'Roboto Condensed', sans-serif;
+                                                
 
 }
 
