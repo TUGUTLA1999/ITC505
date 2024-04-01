@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 6 </title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Prime Numbers</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <main>
+        <div class="calculator">
+            <input type="number" id="number" class="number-input" placeholder="Enter a number">
+            <button onclick="checkPrime()" class="check-prime-button">Check Prime</button><br>
+            <div id="result" class="result-display"></div>
+        </div>
+    </main>
+    
+    <aside>
+        <a href=https://www.amazon.com/adidas-Mens-Yeezy-GY4109-Copper/dp/B09XYDMG7L/ref=sr_1_6?crid=1IKBG1XT4O5I8&dib=eyJ2IjoiMSJ9.U7sU1VCZZOkZs7tR7JNL-NXeFzRjtugYDWu85h2CuMH1DoSVmIEHOADo9vQr-tc4TRm12oiuZwQiMsOSEhQFtYMRpzm8Pbyj0i7-gPJ6imNaQsTD0esnr1-5BJ8ZBDPzThPhWa1P77273zjBa_IeruRorcCpqIuhWhLCi_7ckwBASNdCUnpAeWptIWdwIJOg3WUXBXn1WIrRWSzs5odmzzZESqs2VdUZ5eh9vZAjOfJBTPjT9e2cadLd3d2TzlXbIHUwEZ616nf03Z2KdGfapeWC4zTPdNeeyAAzdz-wJAs.4Mpvj4iAeSIBMqNMuEBpsspZCGdxFxw8D3XCVWpYGs8&dib_tag=se&keywords=adidas+yeezy+shoes+men&qid=1712005825&sprefix=adidas+ye%2Caps%2C133&sr=8-6>
+            <img src="shoe.jpg" alt="Advertisement">
+        </a>
+        <h3>Click on image to redirect to amazon.com</h3>
+    </aside>
+    <footer>
+        <h3>Addendum</h3>
+        <p>
+            <strong>Project Analysis:</strong>  a prime numbers project, prioritize clarity in goals and relevance, ensuring it communicates its purpose well. 
+            Evaluate mathematical accuracy, and if programming is involved, assess algorithm efficiency and code quality. 
+            For educational projects, check its effectiveness in facilitating learning. 
+            Focus on clear presentation, originality, and the practical application of results. 
+            Ensure it's accessible to the intended audience, potentially using visual aids for complex ideas.
+        </p>
+        <p>
+            <strong>Execution Specifics:</strong> The prime number identifier is implemented using JavaScript. 
+            It includes capturing a user's input number from an HTML form, determining whether the number is prime using JavaScript, 
+            and then displaying the result on the page. Users can enter any positive integer, and the script will process the input 
+            to check if it's a prime number or not. The result – 'prime' or 'not prime' – will be displayed on the web page, providing 
+            an immediate and interactive way for users to explore prime numbers."
+        </p>
+        <p>
+            <strong>Issues and Resolutions:</strong> In a prime numbers project, challenges include efficiently identifying large primes and making the topic accessible. 
+            Solutions involve using advanced algorithms, appropriate data types, interactive tools, and clear visualizations. 
+            Addressing these ensures an efficient, engaging project that caters to diverse mathematical understanding levels.
+        </p>
+        <p>
+            <strong>Educational Insights:</strong> This project enhanced my grasp of prime number algorithms and their implementation 
+            in JavaScript, including handling user inputs and dynamically updating the web page. 
+            It deepened my skills in responsive web design using CSS Grid, emphasizing user-friendly interfaces. 
+            Additionally, the project underscored the significance of validating user inputs and providing clear
+             feedback, essential in creating effective and user-centric web applications focused on mathematical computations.
+        </p>
+
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
